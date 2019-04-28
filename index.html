@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Exo+2:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { 
+        font-family: 'Exo 2';         
+        background-color: black !important;
+      }
+      h1, h2, h3 {
+        font-family: 'Exo 2';
+        font-weight: normal;
+      }
+    
+      strong { border-bottom: 5px solid #e74c3c; color: white;}
+      em { font-weight: bold; font-style: normal; }
+
+      .hide { visibility: hidden; }
+      .corner-ribbon {
+        text-align: center;
+        background: #e74c3c;
+        width: 400px;
+        position: absolute;
+        top: 50px;
+        left: -150px;
+        padding: 0.5em;
+        transform: rotate(-45deg);
+      }
+
+      .headspace, .white { background-color: white !important; }
+
+      .remark-slide-scaler { box-shadow: none; }
+      .remark-slide-content { background-size: 100%; background-color: black; color: white;}
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .almostblack { background-color: #091513 }
+      .invert { color: white; }
+      .strike { text-decoration: line-through;}
+      
+      .oki { background-color: #3D9972; color: white;}
+      .oki strong { border-bottom-color: #3D9972; }
+      .bad { background-color: #e74c3c; color: white;}
+      .fade {color:#d3d3d3}
+      .fade strong {color:black}
+      .img100 img {width:122%}
+      .img70 img {width: 70%;}
+      .img50 img {width: 50%;}
+      .height100 { background-size: 90%; }
+      .height50 { background-size: 50%; }
+      .books {background-color: #3D9972}
+      img[alt='Book'] {
+        height: 400px;
+        margin-right: 40px;
+        box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.75); 
+      }
+      .growbot { background-color: #6A4CA6}
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: middle, center, splash
+# The **Principal** Developer
+???
+- Make some noize!
+- This will be Learning 3.0 course – no long introductions, you will do most of the work. So lets begin!
+- Split into teams of 4, know each other names, role and background. 
+
+
+---
+class: middle, center, 
+# ?
+???
+Who do you think is a Principal Dev?
+
+
+---
+class: center, middle
+## A developer has achieved Principal level if he/she has competences required to effectively organize all software development activities in a company.
+???
+I don't like the term *department* because in many companies software development is not a separate department. It doesn't mean that you do this. But you *should* be able.
+
+The term is often used interchangeably with CTO. The name of this course is Principal Developer because Principal means level, whereas CTO, architect, VPoE are roles. Principal can play different roles, if neccessary. It can be individual contributor, but usually it's director-level position. Market is short of people like that, because most developers do not qualify – they are too technical and lack competence in five primary areas. That is why it is very rewarding, because companies struggle to find good candidates, and are offering very good work conditions, maximum compensation, carte blanche. But the most rewarding part is that knowledge in five primary areas allows you to connect the dots and see the big picture.
+
+That being said, there is nothing wrong if you decide to stay purely technical. A senior developer can make happy living. Nevertheless, competence in five primary areas will make a better, well-respected professional regardless of the chosen path – dev, consultant, businessman. You will get much broader perspective it might open new doors. Ready for the journey?
+
+---
+class: center, middle
+# ?
+???
+Principal can organize all development activities… But what's is the purpose of all this activities? 
+
+---
+class: center, middle
+## Our highest priority is to .hide[satisfy the customer through early and continuous delivery of valuable software]
+
+---
+class: center, middle
+## Our highest priority is to satisfy the customer through early and continuous delivery of valuable software
+
+---
+
+class: center, middle
+## Never ask a barber if you need a haircut. 
+### – Warren Buffet
+
+---
+class: center, middle
+## Our highest priority is to satisfy the customer ~~through early and continuous delivery of valuable software~~
+
+---
+background-image:url(nocode.png)
+background-size: contain
+
+---
+class: center, img50
+## Our highest priority is to **effectively** satisfy the customer **needs**, and help the customer **identify** and **prioritize** the needs better.
+
+--
+![:ribbon Create a system, small]
+![](thinking_in_systems.jpg)
+
+---
+# Primary areas of competence
+
+--
+
+### Technology
+???
+can you do this without tech? 
+
+--
+
+### Business
+
+--
+
+### Communication
+
+--
+
+### Processes
+
+--
+
+### Mentoring
+
+
+---
+class: center, middle
+## **IT Performance** is measured along two main dimensions – .hide[Cycle Time and Stability of Systems.]
+
+---
+class: center, middle
+## **IT Performance** is measured along two main dimensions – Cycle Time and Stability of Systems.
+???
+- Average Cycle Time, not the best Cycle Time. 
+- The question is not how fast can you deliver , but how fast do you repeatedly and reliably deliver.
+
+---
+class: center, middle
+## We are looking at the **timeline from the moment a customer places an order to the point when we collect the cash**. 
+### — Taiichi Ohno, the father of “Lean Manufacturing”
+???
+instead of collect the cash, the NEED is met or PROBLEM is solved.
+
+
+---
+# Optimize all activities: 
+### - Customer 👑
+
+--
+
+### - Customer 👑
+
+--
+
+### - Customer 👑
+
+### - Customer 👑
+
+### - Customer 👑
+
+### - Customer 👑
+
+### - Customer 👑
+
+---
+class: center, middle
+background-image:url(safe_twt.png)
+background-size: contain
+
+---
+class: center, middle
+background-image:url(safe.png)
+background-size: contain
+???
+We completely forget what the goal is.
+
+---
+class: center, middle
+![:ribbon Challenge]
+# T&D
+
+
+---
+class: center, middle, splash
+# **Little's Law**
+???
+- low variation (no 1Y project with 5 minute bugfix)
+- we prefer completing at least something instead of having many items in progress.
+
+---
+class: center, middle
+# Reduce **WiP**
+
+---
+class: center, middle
+![:ribbon Challenge]
+# Challenge Accepted!
+
+---
+class: center, middle
+# WiP = 1; Columns = 1
+### \#mentoring
+???
+- one column.
+- one item.
+
+---
+class: center, middle
+## Increase **throughput** by eliminating **waste**
+
+---
+## Wastes of Software Development
+
+--
+
+### – Partially done work
+???
+- cancelled tasks (especially large ones)
+- postponed tasks
+- everything that is WiP, that is not bringing $:)
+
+--
+
+### – Overproduction
+???
+- extra / unused features
+- code/solution "for the future", before it's actually required
+- pushing more features than QA can handle, instead of becoming QA and shipping
+- writing more user stories than needed for the next Sprint
+- backlog  with 12,000 stories (JIT, enough to guarantee flow, enough to make plans)
+- overly complex solutions (accidental complexity)
+- wrong write vs. rent decisions (nocode)
+
+--
+
+### – Non-value added activities
+???
+- obsession with automation (MTTR, MTTD please)
+- setup time, onboarding
+- spending time on understanding shitty code (high discovery cost)
+- refactoring functionality that does not change
+- meetigs without assigning tasks and responsibilities
+- metrics
+- merging
+- time-tracking, reports
+- putting in-process defects into tracking system
+- optimizing part of the process that is not a bottleneck (optimize the whole, avoid suboptimizaiton)
+
+--
+
+### – Delays / waiting
+???
+- manual work
+- testing (spec first, 0 testers). Testing is about preventing (building-in), not finding.
+- BAD automation (long-running, flaky tests)
+- waiting for code review, waiting for approval
+- handoff / waiting someone to help you complete user story (e.g testing, ops) because of OVERSPECIALIZATION
+- unplanned work (downtime, defects)
+- overutilized people
+
+--
+
+### – Rework
+???
+- failing too late
+- misunderstood/miscommunicated requirements, fixing defects, fixing someone else's spaghetti code, too much upfront design
+- ReLearning (answering the same questions, code conventions, meeting again...)
+
+
+---
+class: center, middle
+![:ribbon Challenge]
+# Challenge Accepted!
+???
+shuffle!
+
+---
+class: center, middle
+# Which issue to focus on? 
+
+---
+class: center, middle
+## In every system, exactly one constraint determines the system's capacity .hide[– **The Bottleneck**.]
+
+---
+
+class: center, middle
+## In every system, exactly one constraint determines the system's capacity – **The Bottleneck**.
+
+---
+class: books, middle, center
+![Book](https://images.gr-assets.com/books/1475538019l/113934.jpg)
+![Book](https://images.gr-assets.com/books/1347640457l/8686650.jpg)
+![Book](https://images.gr-assets.com/books/1388500407l/349417.jpg)
+
+---
+class: center, middle, video
+<video height="500" controls>
+  <source src="jeff.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+---
+class: center, middle
+## Our highest priority is to **effectively** satisfy the customer **needs**.
+### (delivering ~~software~~ happiness)
+???
+WOW phylosophy
+
+---
+class: center, middle
+background-image:url(nutcache.png)
+background-size: contain
+
+---
+background-image:url(jeff.jpg)
+background-size: contain
+
+---
+class: center, middle
+# What did I do to solve the problem?
+### **NO** is not an answer. Provide options.
+
+---
+class: center, middle
+background-image:url(rachel.png)
+background-size: contain
+
+---
+class: center, middle
+### When you deal with people who have trouble, you can either choose to take the token that says “It’s no big deal” or the token that says “It’s the end of the world.” Whichever token you pick, they’ll take the other.
+### — The Two Tokens (c) Jean-Louis Gassée, Apple France
+
+---
+class: middle, bad
+### — **@you**: @john it's your turn to lead the demo this Friday!
+### — **@john**: holy sh%t! I will be on vacation...
+
+---
+class: middle, oki
+### — **@you**: @john it's your turn to lead the demo this Friday!
+### — **@john**: I will be on vacation, but no worries – I will find a replacement.
+
+---
+class: middle, bad
+### — *@boss*: @team will you implement all 3 features in the next Sprint?
+### — **@team**: sorry, no. Scope is too big.
+
+---
+class: middle, oki
+### — *@boss*: @team will you implement all 3 features in the next Sprint?
+### — **@team**: Impossible without adjusting the Sprint. 
+### — **@team**: In this Sprint we can implement only feature 1 and do 2 and 3 in the next Sprint. Alternatively, let's reduce current scope to squeeze 1, 2 and 3 in. The choice is yours.
+
+---
+class: middle, bad
+### — **@you**: @john can you help me onboard Alex? He is joining next week.
+### — **@john**: sorry, that's not my responsibility.
+
+---
+class: middle, oki
+### — **@you**: @john can you help me onboard Alex? He is joining next week.
+### — **@john**: sure, but it will take long time for me. Let me check what Jack is doing, as he is more experienced. I will let you know who'll take over tomorrow noon.
+
+---
+background-image:url(jeff_ok.jpg)
+background-size: contain
+
+---
+class: center, middle
+## Story time
+???
+- moving away from iterations to JIT delivery (not clear when things will be done, but always faster than 2 weeks). 
+- Customers were unhappy, and I was informed by AUDITOR :)
+- particular customers prefer predictability over speed.
+- how do you know that your actions make customer happy?
+
+---
+class: center, middle
+# One-on-Ones
+???
+- retros does not involve customer!
+- what's your goal? 
+- is there anything that you don't like?
+- how can I make you happy? – transparency, asking too many questions, 
+- it shows that I really give a shit.
+
+---
+## Optimize all activities: 
+### - Customer 👑
+
+### - Customer 👑
+
+### - Customer 👑
+
+### - Customer 👑
+
+### - Customer 👑
+
+### - Customer 👑
+
+
+---
+class: center, middle
+# Mentoring
+???
+what is mentoring?
+
+---
+# Mentoring is 
+
+--
+
+### - Encouraging
+
+--
+
+### - Challenging
+
+--
+
+### - Sharing / Suggesting
+
+--
+
+### - Doing **together**
+
+---
+### **Leveling** the knowledge in the team
+???
+replaceability and bus factor
+bottlenecks
+t-shaping
+team that adapts to varying demand. 
+
+--
+
+### **Nurturing good traits**
+
+--
+
+### **Fixing bad traits**
+
+--
+
+### **Hiring acceleration**
+
+--
+
+### **Retention**
+
+--
+
+### **Culture** (people do what people see)
+???
+especially they clone behaviour of a leader.
+
+--
+
+### **Reputation** (PageRank)
+???
+- respect and fan club
+- growth in a social hierarchy.
+
+---
+class: center, middle
+# Homework Review
+
+---
+class: center, middle
+# Pair Programming
+???
+- PP reduces EGO
+- amplifies learning.
+- eliminates code reviews.
+
+---
+class: center, middle
+# Code Reviews
+
+---
+class: center, middle
+# Technical Interview
+
+---
+class: center, middle
+# Cross-org mentoring (make an exercise)
+
+---
+class: center, middle
+- Language police (customer "they"). Slack DMs
+- Problem-solving mindset.
+- Yoda language ("responsibility aversion")
+- Constraints (WiP = 1, No testers, No prod rights.)
+
+---
+class: center, middle
+# **Stand up!**
+???
+- body language 55%, voice 38%, how much is words?
+- charisma = body language + voice
+- voice goes up (vs. relaxed pose)
+- control the room
+- see everyone, give attention to the ones you need.
+- authority (pope) and self-confidence (people can't do that)
+- adreneline, focus
+- dealing with skepticism
+- where do you stand at the standup?
+- how to master? start small.
+
+---
+class: center, middle, splash
+# **Supporter** > Skeptic
+### #leadership
+
+---
+class: bad, center, middle
+## — Let's use Kubernetes in production?
+## — We have tried already and it didn't work out.
+???
+- Killed idea
+- Killed future ideas (no appreciation here)
+- Feel wrong and stupid
+
+---
+class: oki, center, middle
+## — Let's use Kubernetes in production?
+## — Excellent idea! Have you though about troubleshooting challenges? We had serious problems with it!
+???
+- give credit-
+- the power of question! Keeps idea alive. Motivates for more ideas. Challenge - what if she find a solution?
+
+---
+class: bad, center, middle
+## — Let's switch from JIRA to Trello
+## — Trello is for small companies. I don't think it will work out!
+???
+Make you smarter than your peer. Kills the idea. You are one to blame (NEVER BE JUDGE!!!)
+
+---
+class: oki, center, middle
+## — Let's switch from JIRA to Trello
+## — Thanks for raising this. I have heard some good things about Trello. Can you create a demo using real user stories from JIRA? 
+
+---
+class: oki, center, middle
+## — Let's switch from JIRA to Trello
+## — Thanks for raising this. I have heard some good things about Trello. Can you create a demo using real user stories from JIRA? **If the team buys it, I can help convincing CEO.**
+
+---
+
+class: bad, center, middle
+## — What if we build a mobile app?
+## — Backlog is full and we have different priorities.
+
+---
+
+class: oki, center, middle
+## — What if we build a mobile app?
+## — I love the idea. We can wait 3 months or just hack it during Brownbag and sell it to CEO. Sounds good?
+
+---
+class: center, middle, almostblack
+<iframe width="853" height="480" src="https://www.youtube.com/embed/fW8amMCVAJQ" frameborder="0" allowfullscreen></iframe>
+???
+- being a follower is important. Many followers – goal achieved.
+- disagree, but commit
+
+---
+class: center, middle, splash
+# **Recognize** efforts
+### #leadership
+
+---
+class: center, middle
+# The primary reason people leave their job is lack of recognition.
+???
+Why people work for free then?
+
+---
+class: center, middle, almostblack
+<iframe width="853" height="480" src="https://www.youtube.com/embed/wD2cVhC-63I?start=38" frameborder="0" allowfullscreen></iframe>
+
+---
+class: center, middle
+# 2 Magic Words
+### never inappropriate - never useless - often forgotten
+???
+- The cheapest and the most effective way to appreciate someone.
+
+
+---
+class: center
+### Thanks.
+
+---
+class: center
+### Thanks.
+### Thank you!
+
+---
+class: center
+### Thanks.
+### Thank you!
+## Thank you, **John**!
+
+---
+class: center
+### Thanks.
+### Thank you!
+## Thank you, **John**!
+# Thank you, John! Fixing such an annoying Heisenbug was a masterpiece!
+???
+Thanksbooster = Public Thanks.
+
+---
+class: bad, center, middle
+# Thank you, John! Finally someone found courage and fixed this annoying Heisenbug!
+
+---
+background-image:url(kudo_wall.jpg)
+
+---
+class: center, middle
+background-image:url(disco.png)
+
+---
+class: center, middle
+![:ribbon Challenge]
+## Let's come up with five ways of appreciating colleagues' work 🎁🤗  
+???
+e.g. in email, add a kudo card or a gif
+
+---
+class: center, middle
+# Don't become a **bottleneck**
+### #leadership
+???
+(good, you are probably a leader)
+
+---
+class: oki
+## — Man, my laptop is broken. Can you assist?
+
+--
+
+## — What did you do to solve the problem?
+
+---
+
+class: oki
+## — Man, my laptop is broken. 
+
+--
+
+## — What you are going to do about it? 
+
+--
+
+## — No f$%#%@ clue!
+
+--
+
+## — What options do you see?
+
+---
+class: center, middle, splash
+# Master **Commitment Language**
+### #leadership
+
+---
+class: center, middle, bad
+# We need to get this done
+
+---
+class: center, middle, bad
+# I hope to get this done by tomorrow
+
+---
+class: center, middle, bad
+# I will do all my best to attend the meeting
+
+---
+class: center, middle, bad
+# I am 80% sure.
+
+---
+class: center, middle, bad
+# I can send you the docs by end of the week.
+???
+– I can send, but chances are I will not send you.
+
+---
+class: center, middle, bad
+# 10th of March should be ok, unless I will have an immediate business trip (fingers crossed)
+
+
+---
+class: center, middle, oki
+# I will ...
+### (OK, but still unclear when)
+
+---
+class: center, middle, oki
+# I will -------- by --------
+### (may require polling, 2 people involved)
+
+---
+class: center, middle, oki
+# I will -------- by -------- and drop you a message
+### (observer pattern, 1 person involved)
+
+---
+class: center, middle, oki
+# I have no clue how it works. I will figure it out by tomorrow and will let know.
+
+---
+class: center, middle, oki
+# I can't tell you the estimate. I will talk to the team today and get back to you tommorrow.
+
+---
+class: middle, center
+# If you can't give a date, give a date for a date.
+
+---
+class: middle, center
+# - Johnny, can you clean up this mess?
+
+---
+class: middle, center
+# - Johnny, will you clean up this mess?
+
+---
+class: middle, center
+# - Johnny, will you clean up this mess before pushing the code?
+???
+- You can stop a person and ask him - will you do it?
+- "of I can't because". You found an impediment! Fix and replay.
+
+---
+class: center, middle
+# Ask commitment from specific people.
+
+
+
+---
+class: center, middle, bad
+## **@channel** who is going to show our product demo this Friday?
+
+---
+
+class: center, middle, oki
+## **@johnny** what if you take leadership over product demo this Friday? 
+
+---
+
+class: center, middle, invert
+background-image:url(tyrion.jpg)
+# Before you talk, think about what goal you want to achieve, and whether what you'll say is bringing you closer to the goal.
+
+---
+class: center, middle, invert
+# Think **WAIT**.
+### #communication
+
+---
+class: center, middle, bad
+### After getting a job offer:
+# — Thank you for this amazing job offer. That was unexpected!
+
+---
+class: center, middle, bad
+### When someone has failed:
+# — You see! I said to you it won't work!
+
+---
+class: center, middle, bad
+### When manager is complaining:
+# — John, I think Alex is a low-performer.
+# — Yeah, he is not the best guy, but...
+
+---
+class: center, middle, bad
+### When manager is complaining:
+# — John, I think Alex is a low-performer.
+# — No, he is a high performer.
+
+---
+class: bad
+```
+Hi Ed,
+
+I am .............., I'm searching for Java expert to teach us advanced Java training. I saw your amazing training.
+
+Do you have a plan for 2 weeks training that consist of your course plus other topics:
+- Modular Java
+- Java Performance Tuning and Optimization
+- Software architecture, Analysis and Design
+- TDD, DDD, or latest Java best practice
+
+Our current environment is ..................
+
+Duration: 2 weeks
+Location: on-premises
+Number of Trainees: 5
+
+Please estimate a Fee per person
+
+This is still a plan, I have to propose it to my boss.
+
+Thank you
+
+Kind regards,
+```
+
+---
+class: center, middle
+![](spam1.png)
+
+---
+class: center, middle
+![](spam2.png)
+
+---
+class: center, middle
+![](spam3.png)
+
+---
+class: center, middle
+![](spam4.png)
+
+---
+class: center, middle
+# Every behaviour has **a reason**
+### #communication
+???
+- why he/she is talking?!
+- we choose the known tool to us at the moment.
+- so sometimes we are solving the wrong problem.
+
+---
+class: middle, center
+## Story time
+???
+Rinalds.
+
+---
+class: center, middle
+# CEO is not sharing relevant information with employees.
+
+---
+class: center, middle
+# Someone is raising the voice on you.
+???
+- sometimes he wants something good for you (even offending you)
+
+---
+class: center, middle
+# – I do not think developers should do acceptance testing. It's our job.
+
+---
+class: center, middle
+# — Let's keep codebase centralized. Allowing remote team to fork codebase can lead to duplication of effort.
+
+---
+class: center, middle
+### When someone is telling you his lifestory
+# — lorem ipsum dolor sit amet consectetur adipiscing elit...
+???
+want solution? want opinion? NO! just want to be heard!
+
+---
+# How to recognize the reason?
+
+--
+
+### Hear vs. listen
+
+--
+
+### No labeling
+
+--
+
+### Ask
+???
+- 5 whys
+- "what's the goal?" "why are you saying this?"
+
+--
+
+### 2nd person view (what's going on in that person’s world for this to make sense?)
+
+--
+
+### 3rd person view (zooming out)
+???
+ok, 2 guys are sitting next to each other and fighting (not me!)
+
+---
+class: center, middle
+![:ribbon Challenge]
+## Think of 10 things that influence human behaviour and perception.
+???
+- timing
+- mood
+- stress
+- environment
+- pressure (team, social)
+- other problems we have
+- our limited perspective
+
+
+---
+class: center, middle, splash
+# Bridge the gap with **"we"**.
+### #communication
+
+---
+class: center, middle, bad
+# Unfortunately you don't see the full picture
+???
+I am better than you.
+
+---
+class: center, middle, oki
+# Unfortunately we don't see the full picture
+???
+We are equal.
+
+---
+class: center, middle, bad
+# I think he has disclosed strictly confidential information. What can we do about it?
+???
+blame
+
+---
+class: center, middle, oki
+# I think we have disclosed strictly confidential information. What can we do about it?
+???
+no blame
+
+---
+class: center, middle, bad
+# Business doesn't understand how to work with us. 
+???
+increasing the gap
+
+---
+class: center, middle, oki
+# We don't understand how to work together. How can we do better?
+???
+bridging the gap
+
+---
+background-image:url(intrum_box.jpg)
+background-position: top
+???
+- be a policeman.
+
+
+---
+class: center, middle
+![:ribbon Challenge]
+### *— "You don't fully understand the consequences."*
+### *— "I don't think you hear what I am saying."*
+### *— "Alex was behaving like jerk while talking to me. He didn't accept my solution."*
+
+
+---
+class: center, middle
+# **Touch!**
+### #communication
+???
+- high fives as well, pat on the shoulder.
+- touch releases oxytocin (oksitoucin) in the recipient’s brain - safer, relax, connection, brings us closer.
+- waitresses get higher tips, petition gatherers get more signatures. 
+
+---
+class: center, middle
+# Discover **ZOPA**.
+### #job interview
+???
+- the goal (WAIT), and (un)acceptable outcome from both sides.
+- aim too high - lost
+- aim too low - lost.
+- during conversation, you focus on achieving the goal, not thinking of what the goal is.
+- how to discover?
+
+---
+class: center, middle
+# If money is fixed, negotiate **time**.
+### #job interview
+
+---
+class: center, middle
+# Make the company **feel special**.
+### #job interview
+
+---
+class: center, middle
+# Take **notes**.
+### #job interview
+???
+- use paper to look more attentive, serios
+- write and remember names, if talking to group
+- write conversation transcrypt
+
+---
+class: center, middle
+# Know the **interviewer**.
+### #job interview
+???
+- because generally you want to be liked.
+ -If you know about a person, you can make him feel comfortable by asking him about something that he knows well. 
+
+---
+background-image:url(mindaugas.png)
+background-size: auto 100%
+
+e
+---
+class: center, middle
+# Be .strike[interesting] **interested**.
+### #job interview
+???
+- People like to be heard and like being felt interesting. 
+- when someone is talking, you are learning
+
+---
+
+### - "wow! what happened next?"
+
+--
+
+### - "can you tell me more about the solution?"
+
+--
+
+### – "did I understand correctly that ...?"
+
+--
+
+### – Parroting ("then the script killed the prod!" -> "killed the prod?")
+
+--
+
+### - ?
+???
+- the less you talk, the more you know.
+- look at the person with curiocity.
+- nodding.
+- writing things down (let me take some notes)
+
+---
+class: center, middle
+# Manage your **stress level**.
+### #job interview
+
+---
+class: headspace
+background-image:url(headspace.jpg)
+background-size: 40% auto
+???
+- less stress
+- more attention, notice more.
+- respond more, react less.
+- emotional intelligence.
+???
+Navy Seal breathing technique: 4 sec inhale, 4 sec keep, 4 sec exhale, 4 sec keep. 5 minutes.
+
+---
+class: center, middle
+# You did it!
+
+---
+class: center, middle
+# Thank you!
+???
+Don't struggle! Enjoy your life! Be whateve you want to be!
+
+    </textarea>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js">
+    </script>
+    <script>
+      remark.macros.ribbon = function (text) {
+        var url = this;
+        return '<div class="corner-ribbon">' + text + '</div>';
+      };      
+      var slideshow = remark.create({
+        ratio: '16:9',
+        slideNumberFormat: function (current, total) { return "" }
+      })
+    </script>
+  </body>
+</html>
