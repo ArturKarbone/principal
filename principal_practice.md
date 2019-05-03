@@ -119,10 +119,9 @@ In a team, classify each waste from the list using *PONDR*. Make sure that you u
 
 Wastes:
 
-1. Cancelled tasks
+1. Cancelled or Postponed tasks
 2. Setup Time / Onboarding
 3. Suffering from high discovery cost due to spaghetti code
-4. Postponed tasks
 5. Work that is under development (stuff that you are coding)
 6. Work that is deployed, but not yet released
 7. Extra / unused features “for the future”
@@ -136,6 +135,7 @@ Wastes:
 15. Code that we wrote “for the future”, before it's actually required
 16. Refactoring functionality that does not change
 17. Doing routine tasks manually
+17. Trying to maximize output, not outcome (delivering features with low impact)
 18. Unplanned work (downtime)
 19. Team members shared across projects
 20. Optimizing part of the process that is not a bottleneck
@@ -146,16 +146,18 @@ Wastes:
 25. Writing more user stories than needed for the next few Sprints
 26. Maintaining a large backlog with work that won't be done anytime soon
 27. Accidental complexity
-28. Failing too late in the pipeline / fixing escaped defects
-29. Overitulized workforce
-30. Handoffs (inability to complete the work independently)
-31. Meetings with low ROI
-32. Impasse
-33. Long-running tests (long is when you have enough time to make a coffee)
-34. Dealing with merge conflicts
-35. Making a wrong *write vs. rent* decisions, *on-prem vs. SaaS*
-36. Writing software when Excel spreadsheet is good enough
-37. Building things right before you know what is the right thing
-38. Choosing MVP over MVE / Fake Door Testing
+28. Adoping a technology and tools because they are trendy (Marchitecture)
+29. Failing too late in the pipeline / fixing escaped defects
+30. Overitulized workforce
+31. Handoffs (inability to complete the work independently)
+32. Meetings with low ROI
+33. Impasse
+34. Long-running tests (long is when you have enough time to make a coffee)
+35. Dealing with merge conflicts
+36. Prefering flexible and abstract code over simple and direct code
+37. Making a wrong *write vs. rent* decisions, *on-prem vs. SaaS*
+38. Writing software when Excel spreadsheet is good enough
+39. Building things right before you know what is the right thing
+40. Choosing MVP over MVE / Fake Door Testing
 
 In your project, which wastes are the most painful? List three major wastes. Share it with the team and discuss how to improve the situation.
