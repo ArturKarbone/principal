@@ -89,20 +89,21 @@ In a team, mark activities that reduce WiP with ❤️ and activities that incre
 23. Fear of saying *no* / accepting lots of work to *please* customer(s)
 24. Leader is too busy to explain Little's Law to the team
 25. Jerks in the team (knowledge refrigerators)
-26. Unresolved conflicts in the team
-27. Micromanagement, time-tracking and other BS
-28. Isolation / work on long-living feature branches
-29. Daily standups
-30. Insecure environment
-31. No goal / the team works on completely unrelated tasks or different projects
-32. No WiP limits (pushing of work)
-33. Strict WiP limits (pulling of work)
-34. Dependencies on people, teams, 3rd-party
-35. Long-running tests
-36. Waiting for code review
-37. Blocking code review / Code review is the first priority
-38. Waiting for clarification, approvals
-39. Unplanned work (unexpected Critical Bug found on Production)
+26. Untracked work
+27. Unresolved conflicts in the team
+28. Micromanagement, time-tracking and other BS
+29. Isolation / work on long-living feature branches
+30. Daily standups
+31. Insecure environment
+32. No goal / the team works on completely unrelated tasks or different projects
+33. No WiP limits (pushing of work)
+34. Strict WiP limits (pulling of work)
+35. Dependencies on people, teams, 3rd-party
+36. Long-running tests
+37. Waiting for code review
+38. Blocking code review / Code review is the first priority
+39. Waiting for clarification, approvals
+40. Unplanned work (unexpected Critical Bug found on Production)
 
 In your project, which activities contribute to increased WiP? List three major activities. Share it with the team and discuss how to improve the situation.
 
