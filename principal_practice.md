@@ -91,7 +91,7 @@ In a team, mark activities that reduce WiP with ❤️ and activities that incre
 25. Jerks in the team (knowledge refrigerators)
 26. Untracked work
 27. Unresolved conflicts in the team
-28. Micromanagement, time-tracking and other BS
+28. Lack of a common goal
 29. Isolation / work on long-living feature branches
 30. Daily standups
 31. Insecure environment
