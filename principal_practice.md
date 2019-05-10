@@ -1,6 +1,6 @@
 #### #1 Self-reflection (7 min)
 
-On a paper, rate your skills from 1 (rookie) to 10 (master Yoda). Visualize your skills on the Coaching Wheel: plot numbers on the dotted lines; connect plotted numbers with lines.
+On a paper, rate your skills from 1 (rookie) to 10 (master Yoda). Visualize **your** skills on the Coaching Wheel: plot numbers on the dotted lines; connect plotted numbers with lines.
 
 ![WheelTwoCircles](/Users/eduardsi/projects/notes/training/WheelTwoCircles.png)
 

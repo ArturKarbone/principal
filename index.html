@@ -21,7 +21,9 @@
       .last-emphasize h3:last-of-type { font-weight: bold }
       em { font-weight: bold; font-style: normal; }
 
+      .left { float: left; } .right { float: right }
       .hide { visibility: hidden; }
+      .shorter { padding: 120px 350px;}
       .corner-ribbon {
         text-align: center;
         background: #e74c3c;
@@ -75,88 +77,79 @@ class: middle, center, splash
 
 
 ---
-class: middle, center, 
-# ?
-???
-Who do you think is a Principal Dev?
-
-
----
-class: center, middle
-## A developer has achieved Principal level if he/she has competences required to effectively organize all software development activities in a company.
-???
-I don't like the term *department* because in many companies software development is not a separate department. It doesn't mean that you do this. But you *should* be able.
-
-The term is often used interchangeably with CTO. The name of this course is Principal Developer because Principal means level, whereas CTO, architect, VPoE are roles. Principal can play different roles, if neccessary. It can be individual contributor, but usually it's director-level position. Market is short of people like that, because most developers do not qualify – they are too technical and lack competence in five primary areas. That is why it is very rewarding, because companies struggle to find good candidates, and are offering very good work conditions, maximum compensation, carte blanche. But the most rewarding part is that knowledge in five primary areas allows you to connect the dots and see the big picture.
-
-That being said, there is nothing wrong if you decide to stay purely technical. A senior developer can make happy living. Nevertheless, competence in five primary areas will make a better, well-respected professional regardless of the chosen path – dev, consultant, businessman. You will get much broader perspective it might open new doors. Ready for the journey?
-
----
 class: center, middle
 # ?
 ???
-Principal can organize all development activities… But what's is the purpose of all this activities? 
+who is the principal dev.
 
 ---
 class: center, middle
+## The Principal Developer has the necessary skills to **bootstrap, organize and lead** software development activities in a company. 
+???
+- organize and lead also means CHANGE for the max efficiency, if needed
+- Principal is level, whereas CTO, Team Lead are roles. Principal can play different roles.
+- Such people are rare, because most developers do not qualify (too technical).
+
+
+---
+class: center
 ## Our highest priority is to .hide[satisfy the customer through early and continuous delivery of valuable software]
+???
+- close as many JIRA issues as possible?
+- write features? : )
 
 ---
-class: center, middle
+class: center
 ## Our highest priority is to satisfy the customer through early and continuous delivery of valuable software
+???
+- never ask a barber if you need a haircut.
 
 ---
-
-class: center, middle
-## Never ask a barber if you need a haircut. 
-### – Warren Buffet
-
----
-class: center, middle
+class: center
 ## Our highest priority is to satisfy the customer ~~through early and continuous delivery of valuable software~~
-
----
-background-image:url(nocode.png)
-background-size: contain
+???
+Write nothing; deploy nowhere; NoCode.
 
 ---
 class: center, img50
-## Our highest priority is to **effectively** satisfy the customer **needs**, and help the customer **identify** and **prioritize** the needs better.
+## Our highest priority is to satisfy the customer **needs**, and help the customer **identify** and **prioritize** the needs better.
 
 --
 ![:ribbon Create a system, small]
 ![](thinking_in_systems.jpg)
 
+
 ---
-class: white, invert, img70
-### Five areas of competence
+class: white, shorter
+### ![:levels Technology, fas, fas, fas, fas, fas]
 
 --
 
-### 1. Technology
-???
-can you do this without tech? 
+### ![:levels Business, fas, far, far, far, far]
 
 --
 
-### 2. Business
+### ![:levels Processes, fas, far, far, far, far]
 
 --
 
-### 3. Communication
+### ![:levels Mentoring, fas, far, far, far, far]
 
 --
 
-### 4. Processes
+### ![:levels Communication, fas, far, far, far, far]
 
---
+---
+class: white, shorter
+### ![:levels Technology, fas, fas, fas, fas, far]
 
-### 5. Mentoring
+### ![:levels Business, fas, far, far, far, far]
 
---
+### ![:levels Processes, fas, far, far, far, far]
 
-![right-abs](balanced.png)
+### ![:levels Mentoring, fas, far, far, far, far]
 
+### ![:levels Communication, fas, far, far, far, far]
 
 ---
 class: center, middle
@@ -848,11 +841,16 @@ Don't struggle! Enjoy your life! Be whateve you want to be!
     </textarea>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js">
     </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script>
       remark.macros.ribbon = function (text) {
         var url = this;
         return '<div class="corner-ribbon">' + text + '</div>';
       };      
+      remark.macros.levels = function(text, one, two, three, four, five) {
+        return '<div class="left">' + text  + '</div>' + '<div class="right"><i class="' + one + ' fa-circle"></i> <i class="' + two + ' fa-circle"></i> <i class="' + three + ' fa-circle"></i> <i class="' + four + ' fa-circle"></i> <i class="' + five + ' fa-circle"></i></div>' +
+        '<div style="clear:both"></div>'        
+      };
       var slideshow = remark.create({
         ratio: '16:9',
         slideNumberFormat: function (current, total) { return "" }
