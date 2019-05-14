@@ -1,47 +1,8 @@
-#### #1 Self-reflection (7 min)
-
-On a paper, rate your skills from 1 (rookie) to 10 (master Yoda). Visualize **your** skills on the Coaching Wheel: plot numbers on the dotted lines; connect plotted numbers with lines.
-
-![WheelTwoCircles](/Users/eduardsi/projects/notes/training/WheelTwoCircles.png)
-
-
-
-Now, assess each skill individually and think:
-
-- How mastering that skill can help you? What doors does it open?
-- How does lack of that skill is limiting you?
-- How can you polish that skill?
-
-Also think:
-
-- Why keeping skills in balance is important?
-- Why disbalance is dangerous?
-- How can you maintain the balance?
-
-#### #1 Teamwork (20 min)
-
-Quickly share results of self-reflection with the team. Now, as a team, prepare a short presentation (3-5 minutes) that:
-
-- Convinces audience on the importance of each skill and perils of its lack
-- Shares tips/hints on how to grow each skill
-- Convinces listeners on the importance of balance and perils of disbalance
-- Shares tips/hints on how to keep skills in balance
-
-Make sure that every team member speaks.
-
-Pro Tip: start with an actual problem, and people will listen carefully
-
-Pro Tip: if possible, interact with listeners
-
-Pro Tip: if possible, use short real-world cases/stories/examples
-
-Pro Tip: to sound convincing, speak loudly
-
 ### #1 Think and discuss (20 min)
 
 1. Who is the customer in your software development process?
 
-*In large organizations, there could be multiple customers (external and internal). The goal is to identify each group of customers, understand the process “from idea to cash” for each group, and continuously reduce the average cycle time.*
+*In large organizations, there could be multiple customers (external and internal). The goal is to identify each group of customers, understand the process “from idea to cash” for each group, and continuously reduce the average lead time.*
 
 2. When the clock starts and stops in your process? Use a sheet of paper to sketch the whole process “from idea to cash”.
 
@@ -51,7 +12,7 @@ Pro Tip: to sound convincing, speak loudly
 
 Answer the following questions:
 
-3. What is your average cycle time (CT)?
+3. What is your average lead time (CT)?
 4. How does CT impact customers' business? 
 5. What happens when CT is unsatisfactory high? 
 6. How does CT impact our reputation?
@@ -103,7 +64,7 @@ In a team, mark activities that reduce WiP with ❤️ and activities that incre
 37. Waiting for code review
 38. Blocking code review / Code review is the first priority
 39. Waiting for clarification, approvals
-40. Unplanned work (unexpected Critical Bug found on Production)
+40. Unplanned work (Critical Bug found on Production)
 
 In your project, which activities contribute to increased WiP? List three major activities. Share it with the team and discuss how to improve the situation.
 

@@ -37,6 +37,9 @@
 
       .headspace, .white { background-color: white !important; color: black !important}
       .right-abs, img[alt="right-abs"] { top: 3em; right: 0px; position: absolute;}
+      img[alt="right-abs"] {
+        box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.75); 
+      }
       .remark-slide-scaler { box-shadow: none; }
       .remark-slide-content { background-size: 100%; background-color: black; color: white;}
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
@@ -44,6 +47,7 @@
       .invert { color: white; }
       .strike { text-decoration: line-through;}
       
+      .fa-lightbulb {color: #ffd300}
       .oki { background-color: #3D9972; color: white;}
       .oki strong { border-bottom-color: #3D9972; }
       .bad { background-color: #e74c3c; color: white;}
@@ -112,11 +116,28 @@ Write nothing; deploy nowhere; NoCode.
 
 ---
 class: center, img50
-## Our highest priority is to satisfy the customer **needs**, and help the customer **identify** and **prioritize** the needs better.
+## Our highest priority is to **identify** and **satisfy** the customer **needs**. 
 
 --
 ![:ribbon Create a system, small]
 ![](thinking_in_systems.jpg)
+???
+meet business demand
+
+
+---
+class: center, middle, white
+background-image:url(demand_supply.png)
+background-size: contain
+???
+- understand why highly paid? you become a partner. :)
+
+---
+class: center, middle, white
+background-image:url(demand_supply_qualities.png)
+background-size: contain
+???
+- understand why highly paid? you become a partner. :)
 
 
 ---
@@ -129,25 +150,13 @@ class: white, shorter
 
 --
 
-### ![:levels Processes, fas, far, far, far, far]
+### ![:levels Process, fas, far, far, far, far]
 
 --
 
 ### ![:levels Mentoring, fas, far, far, far, far]
 
 --
-
-### ![:levels Communication, fas, far, far, far, far]
-
----
-class: white, shorter
-### ![:levels Technology, fas, fas, fas, fas, far]
-
-### ![:levels Business, fas, far, far, far, far]
-
-### ![:levels Processes, fas, far, far, far, far]
-
-### ![:levels Mentoring, fas, far, far, far, far]
 
 ### ![:levels Communication, fas, far, far, far, far]
 
@@ -157,83 +166,158 @@ class: white, shorter
 
 ### ![:levels Business, fas, fas, fas, fas, fas]
 
-### ![:levels Processes, fas, fas, fas, fas, fas]
+### ![:levels Process, fas, fas, fas, fas, fas]
 
 ### ![:levels Mentoring, fas, fas, fas, fas, fas]
 
 ### ![:levels Communication, fas, fas, fas, fas, fas]
-
----
-class: center, middle
+???
 ## A goal is not always meant to be reached, it often serves simply as something to aim at.
 
 ---
-class: center, middle
-## **IT Performance** is measured along two main dimensions – .hide[Cycle Time and Stability of Systems.]
+## Self-assessment (15 min)
+### - Assess each skill from 1 (rookie) to 5 (Yoda)
+### - How mastering the skill can help you today and in future?
+### - How can you develop each skill?
+### - How can you maintain the balance?
+### - Share your results, tips & tricks with the team
 
 ---
 class: center, middle
-## **IT Performance** is measured along two main dimensions – Cycle Time and Stability of Systems.
+# **Process**
+
+---
+class: center, middle
+## Every high-performance system with limited capacity needs strict WiP control.
 ???
-- Average Cycle Time, not the best Cycle Time. 
-- The question is not how fast can you deliver , but how fast do you repeatedly and reliably deliver.
+- Overloaded highway is a parking lot. The more carse, the worse it becomes. (traffic lights!)
+- Apple Store specialists.
+- Too many requests either slows down everybody or kills the system (Throttling, Bounded Queues, Thread Pools)
+- You when overloaded with work (focus)
 
 ---
-class: center, middle
-## We are looking at the **timeline from the moment a customer places an order to the point when we collect the cash**. 
-### — Taiichi Ohno, the father of “Lean Manufacturing”
-???
-instead of collect the cash, the NEED is met or PROBLEM is solved.
-
+class: center, middle, white
+background-image:url(wip_control.png)
+background-size: contain
 
 ---
-# Optimize all activities: 
-### - Customer 👑
+class: center, middle, white
+background-image:url(wip_control_push0.png)
+background-size: contain
+
+---
+class: center, middle, white
+background-image:url(wip_control_push.png)
+background-size: contain
+
+---
+class: center, middle, white
+background-image:url(wip_control_push1.png)
+background-size: contain
 
 --
 
-### - Customer 👑
-
---
-
-### - Customer 👑
-
-### - Customer 👑
-
-### - Customer 👑
-
-### - Customer 👑
-
-### - Customer 👑
+![right-abs](https://images.gr-assets.com/books/1361113128l/17255186.jpg)
+???
+- reinforcing loop: slow -> more pressure, more work
+- low quality, corners cut
+- team morale goes down
+- no innovation and improvement time :(
 
 ---
-class: center, middle
-background-image:url(safe.png)
+class: center, middle, white
+background-image:url(wip_control_pull.png)
+background-size: contain
+
+---
+class: center, middle, white
+background-image:url(wip_control_pull1.png)
+background-size: contain
+
+---
+class: center, middle, white
+background-image:url(wip_control_pull2.png)
 background-size: contain
 ???
-SAFE diagram appears to be missing the customer. We do thing in the sake of ORDER, OUR CONVENIENCE, REUSE, but we forget about THE GOAL.
+- systems with stable WiP are estimable (cycle time, velocity)
+- Scrum is WiP limiting system! How? Iteration length. Velocity.
 
 ---
-class: center, middle
-![:ribbon Challenge]
-# Think &amp; Discuss
+### <i class="far fa-lightbulb"></i> Demand will be always higher than you can optimally handle.
 
+--
+
+### <i class="far fa-lightbulb"></i> Communicate your capacity and optimal WiP.
+
+--
+
+### <i class="far fa-lightbulb"></i> Never pull more than optimal WiP. Push is not allowed.
+
+--
+### <i class="far fa-lightbulb"></i> Optimal WiP != Max Utilization
+???
+- slack time (do nothing time)
+- learning time
+- bad estimate time
+- unexpected shit time
+- innovation time
+- axe sharpening time
+- unexpected surprise time
+- your team will thank you :)
+
+---
+class: img70, center, middle
+![:ribbon $$$]
+![](wip_tweet.png)
+### **twitter.com/eduardsi/status/1128254388018003968**
+???
+- all over the world (startups, enterprises)
+- if you can deal with it, you'll be rich.
 
 ---
 class: center, middle, splash
 # **Little's Law**
 ???
-- low variation (no 1Y project with 5 minute bugfix)
-- we prefer completing at least something instead of having many items in progress.
+- We work in CD fashion.
+- Cycle time - how long an item stays in development (or how long a customer waits)
+
+---
+class: center, middle, white
+background-image:url(little_big_wip.png)
+background-size: contain
+???
+what is average cycle time?
+
+---
+class: center, middle, white
+background-image:url(little_less_wip.png)
+background-size: contain
+???
+what is average cycle time?
+
+---
+class: center, middle, white
+background-image:url(little_one_wip.png)
+background-size: contain
+???
+one thing at a time is the best!
 
 ---
 class: center, middle
-# Reduce **WiP**
+# Take-away: smaller WiP = faster delivery.
+
+---
+class: center, middle
+## The power of Little’s Law to teams is not its ability to predict WiP, Thoughput or Lead Time. The true power lies in its ability to influence team behavior with its underlying assumptions.
 
 ---
 class: center, middle
 ![:ribbon Challenge]
-# Challenge Accepted!
+# Reduce **WiP**.
+???
+- wip is waste.
+- 1 item done beats 100 wip.
+- stop starting, start finishing
 
 ---
 class: center, middle
@@ -410,8 +494,14 @@ class: center, middle
 - going to gemba.
 
 ---
-## Optimize all activities: 
+# Optimize all activities: 
 ### - Customer 👑
+
+--
+
+### - Customer 👑
+
+--
 
 ### - Customer 👑
 
