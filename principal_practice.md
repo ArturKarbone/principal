@@ -25,8 +25,8 @@ Share your results with teammates. Are there any process similarities? What are 
 
 In a team, mark activities that reduce WiP with ❤️ and activities that increase WiP with ❌. Make sure that you understand each activity, why and how particular activity influences WiP. 
 
-1. Monotasking
-2. Multitasking
+1. Multitasking
+2. Monotasking
 3. Pair Programming
 4. Mob Programming
 5. Starting working on a new feature, while testing is in progress
@@ -35,7 +35,7 @@ In a team, mark activities that reduce WiP with ❤️ and activities that incre
 8. Teams without testers
 9. Expert and overspecialization in the team (backend/frontend/mobile/db)
 10. T-shaped people (generalizing specialists) in the team
-11. Geo distributed people working on the same challenge
+11. People working on the same codebase, but in different time zones
 12. Developers thinking that “done” means “coded”
 13. Testers thinking that “done” means “tested”
 14. People with completely different values and interests
@@ -44,25 +44,25 @@ In a team, mark activities that reduce WiP with ❤️ and activities that incre
 17. Office / table layout does not enable zero-friction pairing / mobbing
 18. The Principal asks everybody to reduce WiP, but works alone
 19. Shotgun refactoring (shotgun surgery)
-20. Moving in baby steps and keeping the code green while working on a feature
-21. The team does not have pairing experience and Principal is not mentoring
-22. Decoupling deployment from release (batching elimination)
+20. Developing a feature in baby steps and keeping the code on your laptop green
+21. The team does not have pairing experience and The Principal is not mentoring
+22. Decoupling deployment from release
 23. Fear of saying *no* / accepting lots of work to *please* customer(s)
-24. Leader is too busy to explain Little's Law to the team
+24. The Principal is too busy to explain Little's Law to the team
 25. Jerks in the team (knowledge refrigerators)
-26. Untracked work
+26. Untracked / Invisible work
 27. Unresolved conflicts in the team
 28. Lack of a common goal
 29. Isolation / work on long-living feature branches
 30. Daily standups
-31. Insecure environment
-32. No goal / the team works on completely unrelated tasks or different projects
+31. Insecure work environment
+32. "Teammates" working on different and unrelated projects (resource sharing)
 33. No WiP limits (pushing of work)
 34. Strict WiP limits (pulling of work)
 35. Dependencies on people, teams, 3rd-party
 36. Long-running tests
-37. Waiting for code review
-38. Blocking code review / Code review is the first priority
+37. Waiting for code review (asynchronous code review)
+38. Code review is the first priority (synchronous code review)
 39. Waiting for clarification, approvals
 40. Unplanned work (Critical Bug found on Production)
 
@@ -83,10 +83,10 @@ Wastes:
 1. Cancelled or Postponed tasks
 2. Setup Time / Onboarding
 3. Suffering from high discovery cost due to spaghetti code
-5. Work that is under development (stuff that you are coding)
+5. Work that is under development
 6. Work that is deployed, but not yet released
 7. Extra / unused features “for the future”
-8. Time tracking and preparing reports
+8. Submitting time sheets
 9. Putting in-process defects into tracking system
 10. Re-implementing solution due to misunderstood requirements
 11. Re-learning (answering the same questions, discussing the same things)
@@ -96,7 +96,7 @@ Wastes:
 15. Code that we wrote “for the future”, before it's actually required
 16. Refactoring functionality that does not change
 17. Doing routine tasks manually
-17. Trying to maximize output, not outcome (delivering features with low impact)
+17. Trying to maximize output, not outcome (delivering features with zero impact)
 18. Unplanned work (downtime)
 19. Team members shared across projects
 20. Optimizing part of the process that is not a bottleneck
@@ -113,7 +113,7 @@ Wastes:
 31. Handoffs (inability to complete the work independently)
 32. Meetings with low ROI
 33. Impasse
-34. Long-running tests (long is when you have enough time to make a coffee)
+34. Long-running tests (long = 1 coffee roundtrip)
 35. Dealing with merge conflicts
 36. Prefering flexible and abstract code over simple and direct code
 37. Making a wrong *write vs. rent* decisions, *on-prem vs. SaaS*

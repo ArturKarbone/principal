@@ -48,6 +48,7 @@
       .strike { text-decoration: line-through;}
       
       .fa-lightbulb {color: #ffd300}
+      .fa-recycle { color: #e74c3c }
       .oki { background-color: #3D9972; color: white;}
       .oki strong { border-bottom-color: #3D9972; }
       .bad { background-color: #e74c3c; color: white;}
@@ -295,45 +296,23 @@ background-size: contain
 - what is average cycle time?
 
 ---
-class: center, middle, white
-background-image:url(little_wip1.png)
-background-size: contain
-???
-what is average cycle time?
-
----
-class: center, middle, white
-background-image:url(little_wip2.png)
-background-size: contain
-???
-one thing at a time is the best!
-
----
 class: center, middle
-# Take-away: smaller WiP = faster delivery.
+# **Aggressive** WiP reduction leads to faster delivery.
 ???
-aggressive reduction of WiP = $$$
-
----
-class: center, middle
-## The power of Little’s Law to teams is not its ability to predict WiP, Thoughput or Lead Time. The true power lies in its ability to influence team behavior with its underlying assumptions.
-
----
-class: center, middle
-![:ribbon Challenge]
-# Reduce **WiP**.
-???
-- wip is waste.
+- one thing at a time is the best!
 - 1 item done beats 100 wip.
 - stop starting, start finishing
 
 ---
+class: img70, center, middle
+![:ribbon $$$]
+![](wip_tweet.png)
+### **twitter.com/eduardsi/status/1128254388018003968**
+
+---
 class: center, middle
-# WiP = 1; Columns = 1
-### \#mentoring
-???
-- one column.
-- one item.
+![:ribbon Challenge]
+# WiP Exercise
 
 ---
 class: center, middle
@@ -344,70 +323,39 @@ class: center, middle
 
 --
 
-### – Partially done work
+### <i class="fas fa-recycle"></i> Partially done work
 ???
-- cancelled tasks (especially large ones)
-- postponed tasks
-- everything that is WiP, that is not bringing $:)
+- WIP :)
 
 --
 
-### – Overproduction
+### <i class="fas fa-recycle"></i> Overproduction
 ???
-- extra / unused features
-- code/solution "for the future", before it's actually required
-- pushing more features than QA can handle, instead of becoming QA and shipping
-- writing more user stories than needed for the next Sprint
-- backlog  with 12,000 stories (JIT, enough to guarantee flow, enough to make plans)
-- overly complex solutions (accidental complexity)
-- wrong write vs. rent decisions (nocode)
+- code for the future :-)
 
 --
 
-### – Non-value added activities
+### <i class="fas fa-recycle"></i> Non-value added activities
 ???
-- obsession with automation (MTTR, MTTD please)
-- setup time, onboarding
-- spending time on understanding shitty code (high discovery cost)
-- refactoring functionality that does not change
-- meetigs without assigning tasks and responsibilities
-- metrics
-- merging
-- time-tracking, reports
-- putting in-process defects into tracking system
-- optimizing part of the process that is not a bottleneck (optimize the whole, avoid suboptimizaiton)
+-  fixing marge conflicts
 
 --
 
-### – Delays / waiting
+### <i class="fas fa-recycle"></i> Delays / waiting
 ???
-- manual work
-- testing (spec first, 0 testers). Testing is about preventing (building-in), not finding.
-- BAD automation (long-running, flaky tests)
-- waiting for code review, waiting for approval
-- handoff / waiting someone to help you complete user story (e.g testing, ops) because of OVERSPECIALIZATION
-- unplanned work (downtime, defects)
-- overutilized people
+- long-running tests
 
 --
 
-### – Rework
+### <i class="fas fa-recycle"></i> Rework
 ???
-- failing too late
-- misunderstood/miscommunicated requirements, fixing defects, fixing someone else's spaghetti code, too much upfront design
-- ReLearning (answering the same questions, code conventions, meeting again...)
+- rebuilding UI because we didn't show intermediary results to our customers
 
 
 ---
 class: center, middle
 ![:ribbon Challenge]
-# Challenge Accepted!
-???
-shuffle!
-
----
-class: center, middle
-# Which issue to focus on? 
+# Waste exercise
 
 ---
 class: center, middle
@@ -419,11 +367,40 @@ class: center, middle
 ## In every system, exactly one constraint determines the system's capacity – **The Bottleneck**.
 
 ---
+class: center, middle, white
+background-image:url(bottleneck.png)
+background-size: contain
+
+---
+class: center, middle, white
+background-image:url(bottleneck1.png)
+background-size: contain
+
+---
+class: center, middle, white
+background-image:url(bottleneck2.png)
+background-size: contain
+
+---
+class: center, middle, white
+background-image:url(bottleneck3.png)
+background-size: contain
+???
+- see the big picture (make things visible)
+- find the bottleneck (where works piles up)
+- make sure everyone works on it, no overproduction
+- a person bottleneck expert must stop being a bottleneck
+
+
+---
 class: books, middle, center
 ![Book](https://images.gr-assets.com/books/1475538019l/113934.jpg)
 ![Book](https://images.gr-assets.com/books/1388500407l/349417.jpg)
 ![Book](https://images.gr-assets.com/books/1347640457l/8686650.jpg)
 ![Book](https://images.gr-assets.com/books/1333576876l/10127019.jpg)
+???
+- if bottleneck is a person or team, its primary job is to stop being a bottleneck.
+
 
 ---
 class: center, middle, video
@@ -676,7 +653,8 @@ class: center, middle
 ## Trying is lying. Will you create it?
 ### \#coaching
 ???
-!!! consistency
+- consistency!!!
+- I can be your first viewer. Or I can send you to nice public speaking courses.
 
 ---
 class: last-emphasize
@@ -702,6 +680,9 @@ class: last-emphasize
 
 ### - Set rules and constraints (WiP, YBIYRI, CI)
 ???
+- No Product Owner
+- WiP = 1; Columns = 1
+- All work visible.
 - Mandatory code review with 2 signatories in commit.
 - Boyscout's rule
 - Coverage no lower than nowp
