@@ -389,13 +389,15 @@ background-size: contain
 - see the big picture (make things visible)
 - find the bottleneck (where works piles up)
 - make sure everyone works on it, no overproduction
+- help or slack if you can't help.
 - a person bottleneck expert must stop being a bottleneck
 
 ---
 class: book, middle, center
 # Quality ~~vs.~~ and Throughput
 ???
-- no conflict. But we use the wrong words or just not communicate it.
+- no conflict. in fact, it performance = lead time and stability. No speed if quality = shit.
+- But we use the wrong words or just not communicate it.
 - under pressure, we reduce quality because its internal decision. Confronting is hard.
 
 
@@ -430,6 +432,10 @@ background-size: contain
 class: center, middle, white
 background-image:url(no_drift1.png)
 background-size: contain
+???
+- fewer sprint story points
+- the next item, if that's CD environment.
+- one you establish such a rule, that becomes a habit. And part of the culture.
 
 ---
 class: books, middle, center
@@ -438,7 +444,7 @@ class: books, middle, center
 ![Book](https://images.gr-assets.com/books/1347640457l/8686650.jpg)
 ![Book](https://images.gr-assets.com/books/1333576876l/10127019.jpg)
 ???
-- if bottleneck is a person or team, its primary job is to stop being a bottleneck.
+- CD – FAST AND STABILITY
 
 ---
 class: center, middle, video
@@ -449,53 +455,53 @@ class: center, middle, video
 ???
 - END-TO-END! 
 - It's not about how fast we are, it's about how do we make customers happy.
-- fast teams != happy customers
+- CUSTOMERS – Those who order your services and paying for the show.
+
+---
+class: center, middle
+# Fast Delivery != Happy Customers
+???
+- CUSTOMERS – Those who order your services and paying for the show.
 
 ---
 class: center, middle, white
 background-image:url(long_needs.png)
 background-size: contain
-
----
-class: center, middle
-### When you deal with people who have trouble, you can either choose to take the token that says “It’s no big deal” or the token that says “It’s the end of the world.” Whichever token you pick, they’ll take the other.
-### — The Two Tokens (c) Jean-Louis Gassée, Apple France
 ???
-- ~~this is a nature of software development!~~
-- yes, we'll keep optimal throughput, at the same time, let's do strategy...
+- no matter how fast you are... There will be more needs than you can handle.
+- what else can you add to speed? what makes customers happy?
 
 ---
 class: center, middle
-# Making customers happy by cutting corners is BS.
-
-
----
-class: center, middle
-# 10 things that make customer happy?
-???
-- options, alternatives
-- empathy
-- speed
-- predictability
-- positive surprises
-- initiativeness
-- response SLA
-- realiability
-- expectation match
-- understanding (how and why, same language)
-- problem ownership
-- transparency
-- improvement
-- confidence in what you say and so
-- trust
-- long-term thinking
-- magic :-)
+![:ribbon Challenge]
+# What make customer happy?
 ???
 I want someone to facilitate this.
+- strategy! (customer does not give a shit how busy you are... expand, remote)
+- care an understand my business (partner)
+- honesty and courage
+- long-term thinking
+- speak my language
+- options, alternatives
+- prioritization help
+- outcome maximation (no SISO, analytics)
+- cost
+- quality
+- speed
+- initiativeness
+- reliability (delivery to promises)
+- problem ownership
+- transparency
+- continuous improvement
+- confidence
+- trust
+- good relationship, good dude
+- positive surprises
+- magic :-) (INNOVATION TIME!)
 
 ---
 class: center, middle
-# How to be sure?
+# How do we know that customer is happy?
 ???
 - story time
 - moving away from iterations to JIT delivery (not clear when things will be done, but always faster than 2 weeks). 
@@ -512,33 +518,24 @@ class: center, middle
 - is there anything that you don't like?
 - how can I make you happy? – transparency, asking too many questions, 
 - it shows that I really give a shit.
-- going to gemba.
 
 ---
-# Optimize all activities: 
-### - Customer 👑
-
---
-
-### - Customer 👑
-
---
-
-### - Customer 👑
-
-### - Customer 👑
-
-### - Customer 👑
-
-### - Customer 👑
-
-### - Customer 👑
+class: center, middle
+# Junior delivers features. Senior delivers value. Principal delivers **happiness**.
+???
+- it's not only what you deliver... But how you deliver it. Emotional part of things.
 
 ---
-class: white, invert, img70
-### Five areas of competence
+class: white, shorter
+### ![:levels Technology, fas, fas, fas, fas, fas]
 
-![right-abs](balanced.png)
+### ![:levels Business, fas, fas, fas, fas, fas]
+
+### ![:levels Process, fas, fas, fas, fas, fas]
+
+### ![:levels 🤔 Mentoring, fas, fas, fas, fas, fas]
+
+### ![:levels Communication, fas, fas, fas, fas, fas]
 ???
 how does mentoring fits the picture?
 
@@ -547,6 +544,10 @@ class: center, middle
 # Mentoring
 ???
 what is mentoring?
+
+---
+class: center, middle
+## — To be a 10x developer, be a good developer who helps 10 other people get better at what they do.
 
 ---
 ### **Leveling** the knowledge in the team
@@ -571,11 +572,9 @@ what is mentoring?
 --
 
 ### **Retention**
+.right-abs[![](https://images.gr-assets.com/books/1348931599l/6452796.jpg)]
 ???
 Mastery! also applies to seniors (for some of them, teaching is the next level)
-
---
-.right-abs[![](https://images.gr-assets.com/books/1348931599l/6452796.jpg)]
 
 --
 
@@ -724,10 +723,11 @@ class: last-emphasize
 
 --
 
-### - Set rules and constraints (WiP, YBIYRI, CI)
+### - Set rules and constraints
 ???
-- No Product Owner
 - WiP = 1; Columns = 1
+- YBIYRI
+- No Product Owner
 - All work visible.
 - Mandatory code review with 2 signatories in commit.
 - Boyscout's rule
@@ -740,13 +740,14 @@ class: last-emphasize
 - CI every day (eliminate features branching and isolation, forces to test, work in small chunks for better code review)
 - Continuous Deployment (if it hurts, do it more often)
 - No invisible work
+- TDD
 - Shorteting the iteration to 1 week (can be one day)
 
 --
 
 ### - Do together
 ???
-- not telling what to do, but actually doing together.
+- not telling what to do, but actually doing together. The best way to convince.
 
 ---
 class: center, middle
@@ -755,7 +756,7 @@ class: center, middle
 ???
 - 1+1>2.Best idea + best idea = Third idea even better. 
 - leveling
-- to build relationship
+- to build relationship, you learn about each other.
 - reduces ego, more team bonding (social interaction!)
 - amplifies learning (tricks, shmicks...) - MASTERY!
 - rubber duck built in
@@ -786,198 +787,11 @@ class: center, middle
 ???
 - open door policy (too late!)
 - what's your goal?! I want to help.
+- to grow in this company, I suggest...
 - is there anything that you don't like?
 - it shows that I really give a shit.
 - have a walk, have a coffee, do sports.
 
----
-class: center, middle
-# **Stand up!**
-???
-- body language 55%, voice 38%, how much is words?
-- charisma = body language + voice
-- voice goes up (vs. relaxed pose)
-- control the room
-- see everyone, give attention to the ones you need.
-- authority (pope) and self-confidence (people can't do that)
-- adreneline, focus
-- dealing with skepticism
-- where do you stand at the standup?
-- how to master? start small.
-
----
-class: center, middle
-# Every behaviour has **a reason**
-### #communication
-???
-- why he/she is talking?!
-- we choose the known tool to us at the moment.
-- so sometimes we are solving the wrong problem.
-
----
-class: middle, center
-## Story time
-???
-Rinalds.
-
----
-class: center, middle
-# CEO is not sharing relevant information with employees.
-
----
-class: center, middle
-# Someone is raising the voice on you.
-???
-- sometimes he wants something good for you (even offending you)
-
----
-class: center, middle
-# – I do not think developers should do acceptance testing. It's our job.
-
----
-class: center, middle
-# — Let's keep codebase centralized. Allowing remote team to fork codebase can lead to duplication of effort.
-
----
-class: center, middle
-### When someone is telling you his lifestory
-# — lorem ipsum dolor sit amet consectetur adipiscing elit...
-???
-want solution? want opinion? NO! just want to be heard!
-
----
-# How to recognize the reason?
-
---
-
-### Hear vs. listen
-
---
-
-### No labeling
-
---
-
-### Ask
-???
-- 5 whys
-- "what's the goal?" "why are you saying this?"
-
---
-
-### 2nd person view (what's going on in that person’s world for this to make sense?)
-
---
-
-### 3rd person view (zooming out)
-???
-ok, 2 guys are sitting next to each other and fighting (not me!)
-
----
-class: center, middle
-![:ribbon Challenge]
-## Think of 10 things that influence human behaviour and perception.
-???
-- timing
-- mood
-- stress
-- environment
-- pressure (team, social)
-- other problems we have
-- our limited perspective
-
-
----
-class: center, middle, splash
-# Bridge the gap with **"we"**.
-### #communication
-
----
-class: center, middle, bad
-# Unfortunately you don't see the full picture
-???
-I am better than you.
-
----
-class: center, middle, oki
-# Unfortunately we don't see the full picture
-???
-We are equal.
-
----
-class: center, middle, bad
-# I think he has disclosed strictly confidential information. What can we do about it?
-???
-blame
-
----
-class: center, middle, oki
-# I think we have disclosed strictly confidential information. What can we do about it?
-???
-no blame
-
----
-class: center, middle, bad
-# Business doesn't understand how to work with us. 
-???
-increasing the gap
-
----
-class: center, middle, oki
-# We don't understand how to work together. How can we do better?
-???
-bridging the gap
-
----
-background-image:url(intrum_box.jpg)
-background-position: top
-???
-- be a policeman.
-
-
----
-class: center, middle
-![:ribbon Challenge]
-### *— "You don't fully understand the consequences."*
-### *— "I don't think you hear what I am saying."*
-### *— "Alex was behaving like jerk while talking to me. He didn't accept my solution."*
-
-
----
-class: center, middle
-# **Touch!**
-### #communication
-???
-- high fives as well, pat on the shoulder.
-- touch releases oxytocin (oksitoucin) in the recipient’s brain - safer, relax, connection, brings us closer.
-- waitresses get higher tips, petition gatherers get more signatures. 
-
----
-class: center, middle
-# Manage your **stress level**.
-### #job interview
-
----
-class: headspace
-background-image:url(headspace.jpg)
-background-size: 40% auto
-???
-- less stress
-- more attention, notice more.
-- respond more, react less.
-- emotional intelligence.
-???
-Navy Seal breathing technique: 4 sec inhale, 4 sec keep, 4 sec exhale, 4 sec keep. 5 minutes.
-
----
-class: center, middle
-# You did it!
-
----
-class: center, middle
-# Thank you!
-???
-Don't struggle! Enjoy your life! Be whateve you want to be!
 
     </textarea>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remark/0.14.0/remark.min.js">

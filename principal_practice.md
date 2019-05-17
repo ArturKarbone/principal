@@ -1,27 +1,64 @@
-### #1 Think and discuss (20 min)
+### The Plan
 
-1. Who is the customer in your software development process?
 
-*In large organizations, there could be multiple customers (external and internal). The goal is to identify each group of customers, understand the process “from idea to cash” for each group, and continuously reduce the average lead time.*
 
-2. When the clock starts and stops in your process? Use a sheet of paper to sketch the whole process “from idea to cash”.
+Backlog – size (just enough to avoid waiting). Twino story with large backlog.
 
-*In development, the clock starts when a customer places an order. The clock stops when the customer’s problem is solved. What this means will differ from one organization to the next, but the process always starts and ends with a customer.* 
+WAIT. 
 
-*Pro Tip: customers do not care about other requests or how busy you are. They care about how long it takes for you to act on their request. Look at the whole process from the customers' perspective.*
+Every behaviour has a reason. (the goal behind the goal, views)
 
-Answer the following questions:
+Servant Leadership or Leaders eat Last. :-) Requires confidence, because people will probe you anyway. 
 
-3. What is your average lead time (CT)?
-4. How does CT impact customers' business? 
-5. What happens when CT is unsatisfactory high? 
-6. How does CT impact our reputation?
-7. Do you see opportunity for reducing CT? How?
-8. Do you agree that devs who can reduce CT are extremely valuable? Why?
+Understanding Behaviour, Perception and Desires	.
 
-Share your results with teammates. Are there any process similarities? What are the differences? What can you learn from teammates?
+Developers like people who can do things “the right way”
 
-### #2 Teamwork (30 min)
+Let’s reduce WiP! Who the fucking you are? : )
+
+Career and Antifragility.
+
+Stress level and Headspace
+
+Public Speaking
+
+Role Model?
+
+Career – skills that make difference, ignore noise, managing bit.
+
+##### Influence
+
+Self-Confidence. 
+
+Body language and voice.
+
+Stand Up.
+
+Touch.
+
+Reputation and authority (your success story? did you make a difference somewhere? did you work at the super company?)
+
+Network and relationship.
+
+Trust.
+
+##### Trust 
+
+* Low-hanging fruits.
+* Work together, learn the current way.
+* Hang-out together.
+* Peer > Boss. (“We language”)
+
+##### Am I a good leader? 
+
+* One-on-Ones (up, down, sideways)
+* Anonymous Feedback
+* Spotify Health
+* Employee Turnover / Growth
+
+
+
+### WiP Challenge (30 min)
 
 In a team, mark activities that reduce WiP with ❤️ and activities that increase WiP with ❌. Make sure that you understand each activity, why and how particular activity influences WiP. 
 
@@ -68,7 +105,7 @@ In a team, mark activities that reduce WiP with ❤️ and activities that incre
 
 In your project, which activities contribute to increased WiP? List three major activities. Share it with the team and discuss how to improve the situation.
 
-### #3 Teamwork (30 min)
+### Waste Challenge (30 min)
 
 In a team, classify each waste from the list using *PONDR*. Make sure that you understand each waste and the cause(s) of each waste.
 
@@ -89,14 +126,14 @@ Wastes:
 8. Submitting time sheets
 9. Putting in-process defects into tracking system
 10. Re-implementing solution due to misunderstood requirements
-11. Re-learning (answering the same questions, discussing the same things)
+11. Answering the same questions, having the same discussions
 12. Unplanned work (expediting)
 13. Focusing on 100% test coverage and forgetting about MTTR / MTTD
 14. Building a wrong test pyramid (Ice-Cream Cone vs. Eye of Providence)
 15. Code that we wrote “for the future”, before it's actually required
 16. Refactoring functionality that does not change
 17. Doing routine tasks manually
-17. Trying to maximize output, not outcome (delivering features with zero impact)
+17. Trying to maximize output, not outcome (delivering features with low impact)
 18. Unplanned work (downtime)
 19. Team members shared across projects
 20. Optimizing part of the process that is not a bottleneck
@@ -119,6 +156,6 @@ Wastes:
 37. Making a wrong *write vs. rent* decisions, *on-prem vs. SaaS*
 38. Writing software when Excel spreadsheet is good enough
 39. Building things right before you know what is the right thing
-40. Choosing MVP over MVE / Fake Door Testing
+40. Building MVP when MVE is enough
 
 In your project, which wastes are the most painful? List three major wastes. Share it with the team and discuss how to improve the situation.
