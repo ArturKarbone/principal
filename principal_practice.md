@@ -1,4 +1,4 @@
-### WiP Challenge (30 min)
+# WiP
 
 In a team, mark activities that reduce WiP with ❤️ and activities that increase WiP with ❌. Make sure that you understand each activity, why and how particular activity influences WiP. 
 
@@ -45,17 +45,9 @@ In a team, mark activities that reduce WiP with ❤️ and activities that incre
 
 In your project, which activities contribute to increased WiP? List three major activities. Share it with the team and discuss how to improve the situation.
 
-### Waste Challenge (30 min)
+# Wastes
 
 In a team, classify each waste from the list using *PONDR*. Make sure that you understand each waste and the cause(s) of each waste.
-
-1. **P**artially Done Work
-2. **O**verproduction
-3. **N**on-value added activities
-4. **D**elays / Waiting
-5. **R**ework
-
-Wastes:
 
 1. Cancelled or Postponed tasks
 2. Setup Time / Onboarding
