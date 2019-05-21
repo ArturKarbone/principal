@@ -78,9 +78,8 @@ class: middle, center, splash
 # The **Principal** Developer
 ???
 - Make some noize!
-- This will be Learning 3.0 course – no long introductions, you will do most of the work. So lets begin!
 - Take notes, take pictures. Not everything is in slides.
-- Walk.
+- Walk and move.
 - Split into teams of 4, know each other names, role and background. 
 
 ---
@@ -88,7 +87,7 @@ class: center
 ## Our highest priority is to .hide[satisfy the customer through early and continuous delivery of valuable software]
 ???
 - close as many JIRA issues as possible?
-- write features? : )
+- deliver new features? : )
 
 ---
 class: center
@@ -121,11 +120,6 @@ background-size: contain
 ???
 - understand why highly paid? you become a partner. :)
 - a principal dev knows how to...
-
----
-class: center, middle, white
-background-image:url(demand_supply_qualities.png)
-background-size: contain
 
 
 ---
@@ -177,27 +171,11 @@ class: center, middle
 
 ---
 class: center, middle
-## Every high-performance system with limited capacity needs strict WiP control.
+![:ribbon Rule]
+## Demand will be always higher than the team can effectively handle. 
 ???
-- Overloaded highway is a parking lot. The more carse, the worse it becomes. (traffic lights!)
-- Apple Store specialists.
-- Too many requests either slows down everybody or kills the system (Throttling, Bounded Queues, Thread Pools)
-- You when overloaded with work (focus)
-
----
-class: center, middle, white
-background-image:url(wip_control.png)
-background-size: contain
-
----
-class: center, middle, white
-background-image:url(wip_control_push0.png)
-background-size: contain
-
----
-class: center, middle, white
-background-image:url(wip_control_push.png)
-background-size: contain
+- pressure! what happens next?
+- to accept MAX work for utilization or even more (to please customer).
 
 ---
 class: center, middle, white
@@ -209,9 +187,18 @@ background-size: contain
 ![right-abs](https://images.gr-assets.com/books/1361113128l/17255186.jpg)
 ???
 - reinforcing loop: slow -> more pressure, more work
-- low quality, corners cut
-- team morale goes down
-- no innovation and improvement time :(
+- low quality, corners cut, debt goes up
+- no buffer to accomodate uncertaincy, missed deadlines
+- how people feel?
+- no innovation time
+
+---
+class: center, middle
+## Every high-performance system with limited capacity needs strict WiP control.
+???
+- ? You when overloaded with work (focus)
+- ? Overloaded highway? The parking lot! Solve with traffic lights!
+- ? Bounded Queues / TPs' :: Throttling or Degradation on Prod
 
 ---
 class: center, middle, white
@@ -228,32 +215,28 @@ class: center, middle, white
 background-image:url(wip_control_pull2.png)
 background-size: contain
 ???
-- systems with stable WiP are estimable (cycle time, velocity)
-- Scrum is WiP limiting system! How? Iteration length. Velocity.
+- Scrum is WiP limiting, PULL system! How? Iteration length. Velocity.
+- Scrum is also DEADLINE-proof. Basically, you take work based on velocity, not based on DEADLINE.
 
 ---
-### <i class="far fa-lightbulb"></i> Demand will be always higher than you can optimally handle.
-
---
-
-### <i class="far fa-lightbulb"></i> Communicate your capacity and optimal WiP.
-
---
-
-### <i class="far fa-lightbulb"></i> Never pull more than optimal WiP. Push is not allowed.
-
---
-### <i class="far fa-lightbulb"></i> Optimal WiP != Max Utilization
+class: center, middle
+# <i class="far fa-lightbulb"></i> Optimal WiP must include slack time.
 ???
-- slack time (do nothing time)
-- learning time
-- bad estimate time
-- unexpected shit time
-- innovation time, R&D (skunkworks project and insubordination)
-- experimentation with better tools time
-- axe sharpening time
-- unexpected surprise time
-- your team will thank you :)
+- buffer to accomodate uncertaincy (bad estimate, production issue). Otherwise you can't deliver to promises.
+- axe sharpening time, experimentation with better tools time
+- pay off technical debt
+- time for your teammates to create presentation, a training, watch video, read a book. Your team will thank you :)
+- technical innovation time, R&D 
+- surprise time! (underpromise, overdeliver)
+- business incubation. Who else will do this, if not you? Business will thank you.
+
+---
+class: center, middle
+# ?
+???
+- Who has Slack time? How much?
+- Who knows why we don't estimate in man/hours?
+- How do you faciliate business incubation? Any results?
 
 ---
 class: img70, center, middle
@@ -262,7 +245,7 @@ class: img70, center, middle
 ### **twitter.com/eduardsi/status/1128254388018003968**
 ???
 - all over the world (startups, enterprises)
-- if you can deal with it, you'll be rich.
+- if you can deal with it, you'll get a lot of respect. And money.
 
 ---
 class: center, middle, splash
@@ -274,15 +257,15 @@ class: center, middle, white
 ???
 - you want serviceman to focus only on you car, right?
 - Sixt, you have 5 cars, all needs a service. 1 is ferrari, others are Opel. $$$?
+- now explain on the table: prod lead time - how long an item stays in development (or how long a customer waits)
 
 ---
 class: center, middle, white
 background-image:url(little_wip.png)
 background-size: contain
 ???
-- The essence of Continuous Delivery
-- Cycle time - how long an item stays in development (or how long a customer waits)
-- what is average cycle time?
+- The essence of Continuous Delivery, we don't work in batches.
+- what will be average prod lead time?
 
 ---
 class: center, middle
@@ -291,6 +274,7 @@ class: center, middle
 - one thing at a time is the best!
 - 1 item done beats 100 wip.
 - stop starting, start finishing
+- can we accelerate Scrum using this way?
 
 ---
 class: img70, center, middle
@@ -356,30 +340,88 @@ class: center, middle
 ## In every system, exactly one constraint determines the system's capacity – **The Bottleneck**.
 
 ---
-class: center, middle, white
+class: center, middle, white, strongy
 background-image:url(bottleneck.png)
 background-size: contain
+???
+- where is the bottleneck? 
+- developers work faster than testers and PUSH work; 
+- problems? 
+- 1) tester are overloaded :-)
+- 2) No $$$
+- 3) Devs overproduce; 
+- 4) WiP is high; 
+- 5) Throughput won't improve because people don't work on bottleneck.
+- "throwing over the wall (overproduce)". WHAT DO WE DO? WE SET WIP LIMITS!
 
 ---
 class: center, middle, white
 background-image:url(bottleneck1.png)
 background-size: contain
+???
+- why it's better?
+- 1) "folks, work is not done until it's tested". Focus on bottleneck. No "dopamine" click
+- 2) You ask them, why it's not done? Because... :-) 
+- 3) testers unloaded (pull work)
+- 4) now, you have to finish testing first
+- but we still overproduce and work piles up in dev.
+- what's next? WE SET WIP LIMITS!
 
 ---
-class: center, middle, white
+class: center, middle, white, strongy
 background-image:url(bottleneck2.png)
 background-size: contain
+???
+- consequences?
+- no overproduction
+- low wip (fast!)
+- stop starting. start finishing.
+
 
 ---
 class: center, middle, white
 background-image:url(bottleneck3.png)
 background-size: contain
 ???
-- see the big picture (make things visible)
-- find the bottleneck (where works piles up)
-- make sure everyone works on it, no overproduction
-- help or slack if you can't help.
-- a person bottleneck expert must stop being a bottleneck
+- consequences?
+extreme constraint. it's like merging dev/testing column.
+
+---
+### <i class="far fa-lightbulb"></i> Make all work visible.
+
+--
+
+### <i class="far fa-lightbulb"></i> Focus all efforts on the bottleneck.
+???
+- often where work piles up.
+- The responsibility of the bottleneck is STOP being a bottleneck.
+
+--
+
+### <i class="far fa-lightbulb"></i> Don't allow overproduction.
+???
+- I sometimes say "slack is better than overproduction."
+- Stop starting. Start finishing. If you can't help finishing, just do nothing.
+
+--
+
+### <i class="far fa-lightbulb"></i> Set WiP aggressive limits to change human behavior.
+
+--
+
+### <i class="far fa-lightbulb"></i> Optimize the whole process from idea to cash. Local optimization slows down the whole.
+???
+works cross-org and cross-team
+
+---
+class: center, middle
+background-image:url(my_money.jpg)
+background-size: contain
+???
+- Skimlinks – 3 months, CTO offer.
+- Ask.fm – half a year consultant, overtake CTO offer.
+- VMWare chief architect, immediate offer.
+- VPoE JIRA, when I was 23, 250,000 USD + stocks.
 
 ---
 class: book, middle, center
@@ -387,7 +429,7 @@ class: book, middle, center
 ???
 - no conflict. in fact, it performance = lead time and stability (toyota example!). No speed if quality = shit.
 - But we use the wrong words or just not communicate it.
-- under pressure, we reduce quality because its internal decision. Confronting is hard.
+- under pressure, we reduce quality because its internal decision. Negotiation is hard.
 
 ---
 class: center, middle
