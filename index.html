@@ -35,9 +35,10 @@
         padding: 0.5em;
         transform: rotate(-45deg);
       }
-
+      
       .headspace, .white { background-color: white !important; color: black !important}
       .right-abs, img[alt="right-abs"] { top: 3em; right: 30px; position: absolute;}
+      img[alt="lean-ent"] { position: absolute; right: 30px; width: 300px !important; }
       img[alt="right-abs"] {
         box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.75); 
       }
@@ -425,28 +426,78 @@ background-size: contain
 
 ---
 class: book, middle, center
-# Quality ~~vs.~~ and Throughput
+# Quality is not negotiable.
 ???
-- no conflict. in fact, it performance = lead time and stability (toyota example!). No speed if quality = shit.
-- But we use the wrong words or just not communicate it.
-- under pressure, we reduce quality because its internal decision. Negotiation is hard.
+I am very flexible, but when it comes to quality talks. I stop it and never negotiate.
+
+---
+
+### Quality IS fun.
+???
+- morale
+
+--
+
+### Quality IS long-term.
+???
+- invisible threat, bad stuff accumulates
+- reinforcing loops (pressure, brooks, windows)
+
+--
+
+
+### Quality IS speed.
+???
+- Japan and Toyota
+- Quality requires mastery (it's your problem). Like TDD.
+
+--
+
+### Quality IS care.
+???
+- care about teammates and future maintainers (and business)
+- reading vs. writing is 10:1
+
+--
+
+### Quality IS culture.
+???
+- culture of mediocrity vs. culture of technical excellence.
+
+--
+
+### Quality IS reputation.
+???
+- work to your max standards.
+- I never join a company where lack of quality is tolerated. Citadele.
 
 ---
 class: center, middle
-# The Economics of Software Design
-### **dev.tube/video/TQ9rng6YFeY**
+# We want the same thing, but speak different languages. 
+### The Economics of Software Design — **dev.tube/video/TQ9rng6YFeY**
 ???
-- invisible threat (code quality vs. time per feature, COST of feature)
-- bad stuff accumulates.
+- under pressure, we reduce quality because its internal decision. Negotiation is hard.
 - protecting our capacity to deliver features. The cost of adding features.
 - you say "i want this", and any dev says – 2 months or "NO IDEA HOW MUCH."
 - employee churn rate (good luck hiring good people)
-- don't plan the time bomb. 
 
+---
+class: middle, white, img70
+![](4phases.jpg)
+![lean-ent](lean_ent.jpg)
+???
+- exeptions: WHAT IF THERE IS NO LONG-TERM?
+- if your company is exploring, maybe you need an MVE or throway prototype.
+- retire and replacement – fuck long-term.
 
 ---
 class: center, middle
-# You can solve a techical debt problem by triggering an **immediate** negative feedback loop.
+# Kent Beck’s 3X
+### bit.ly/kent_3x
+
+---
+class: center, middle
+# Corner cutting must trigger an **immediate** negative feedback loop.
 ???
 - hey! deadline! can we make it faster? 
 - you did that last time!
@@ -457,7 +508,6 @@ class: center, middle, white
 background-image:url(no_drift.png)
 background-size: contain
 
-
 ---
 class: center, middle, white
 background-image:url(no_drift1.png)
@@ -466,6 +516,12 @@ background-size: contain
 - fewer sprint story points
 - the next item, if that's CD environment.
 - one you establish such a rule, that becomes a habit. And part of the culture.
+
+---
+# Discuss (20 min)
+### What do you do to achieve technical excellence in the company?
+### What struggles do you have?
+### How do your "group mates" deal with similar struggles?
 
 ---
 class: books, middle, center
@@ -507,7 +563,7 @@ class: center, middle
 # What make customer happy?
 ???
 I want someone to facilitate this.
-- strategy! (customer does not give a shit how busy you are... expand, remote)
+- strategy! (customer does not give a shit how busy you are... expand but remember Insta 15 people, split according to rev streams, remote, outsource)
 - backlog (citadele)
 - care an understand my business (partner)
 - honesty and courage
@@ -524,7 +580,7 @@ I want someone to facilitate this.
 - problem ownership
 - transparency
 - continuous improvement
-- confidence
+- confidence in words and actions (firing low-performer)
 - trust
 - good relationship, good dude
 - positive surprises
@@ -537,8 +593,7 @@ class: center, middle
 - story time
 - moving away from iterations to JIT delivery (not clear when things will be done, but always faster than 2 weeks). 
 - Customers were unhappy, and I was informed by AUDITOR :)
-- particular customers prefer predictability over speed.
-- how do you know that your actions make customer happy?
+- some customers prefer predictability over speed.
 
 ---
 class: center, middle
@@ -552,9 +607,15 @@ class: center, middle
 
 ---
 class: center, middle
-# Junior delivers features. Senior delivers value. Principal delivers **happiness**.
+# Juniors deliver features. Seniors deliver value. Principals deliver **happiness**.
 ???
 - it's not only what you deliver... But how you deliver it. Emotional part of things.
+
+---
+class: center, middle
+# ? 
+???
+questions?
 
 ---
 class: white, shorter
@@ -606,7 +667,6 @@ class: center, middle
 .right-abs[![](https://images.gr-assets.com/books/1348931599l/6452796.jpg)]
 ???
 Mastery! also applies to seniors (for some of them, teaching is the next level)
-???
 - bottom line purpose (be careful, unless you give stocks or bonuses)
 - to build an awesome product in August, while open sourcing the best parts.
 
@@ -653,6 +713,7 @@ class: last-emphasize
 ???
 - not discourage != encourage
 - help reach people their potential. People are in self-doubt.
+- exercise: say the the group that you are awesome. Mention name. Say WHY you are awesome.
 - kids - yes you can! 
 
 ---
@@ -739,6 +800,7 @@ class: center, middle
 ## Trying is lying. Will you create it?
 ### \#coaching
 ???
+- do or don't, there is no try.
 - consistency!!!
 - I can be your first viewer. Or I can send you to nice public speaking courses.
 
@@ -780,7 +842,6 @@ class: last-emphasize
 - No prod rights.
 - CI every day (eliminate features branching and isolation, forces to test, work in small chunks for better code review)
 - Continuous Deployment (if it hurts, do it more often)
-- No invisible work
 - TDD
 - Shorteting the iteration to 1 week (can be one day)
 
@@ -837,6 +898,13 @@ class: center, middle
 - have a walk, have a coffee, do sports.
 
 ---
+# Discuss (30 min)
+### <i class="far fa-question-circle"></i> What stops people from mentoring? 
+### <i class="far fa-question-circle"></i> Does mentoring take place in your org? How to boost it?
+### <i class="far fa-question-circle"></i> What are qualities of a good mentor? How to boost them?
+### <i class="far fa-question-circle"></i> What a servant leader can do to make ppl's happier at work?
+
+---
 class: center, middle
 background-image:url(peter.png)
 background-size: contain
@@ -848,40 +916,63 @@ background-image:url(consultants.png)
 background-size: contain
 # **Who the fuck you are?**
 ???
-you can submit people to do something because you are a boss, but...
+why should I listen you? how can I trust you?
 
 ---
 class: center, middle
 # The best argument rarely wins the argument.
 
 ---
-class: center, middle
-# If you rely on your position in a hierarchy to coerce teammates, you will win the situation... and lose people.
+
+### <i class="far fa-lightbulb"></i> Your success story (made a difference, worked @ super org)
+### <i class="far fa-lightbulb"></i> Your reputation
+### <i class="far fa-lightbulb"></i> Your expertise
+### <i class="far fa-lightbulb"></i> Your visibility (speaker, blogger, socials)
+### <i class="far fa-lightbulb"></i> Your influence (followers)
 
 ---
 class: center, middle
-# The currency of leadership is .hide[**trust**.]
-
----
-class: center, middle
-# The currency of leadership is **trust**.
+# Confidence.
 ???
-- help me solve my actual problems (low hanging fruits)
-- work together long, see and respect the current way
-- hangout together
-- peers (same level, same tribe)
-- your success story (made a diff, worked @ super company)
-- WIIFM what's in it for me
-- your expertise
-- your reputation
-- your authority (VISIBILITY, speaker, blogger, socials)
-- your charisma (body lang, voice, standup, touch)
-- your confidence (feeling capable, feeling secure / achivki, demanded, testosterone, headspace, how "fear works")
+- feeling not in need
+- feeling demanded
+- winner's mindset (achivki, competitive sports)
+- testosterone up 
+- dealing with unmanageable anxiety (headspace)
+- environment (encouraged by peers, mentor, friends, family, ethnic group)
+
+---
+class: center, middle
+# Charisma = body language and voice.
+???
+your charisma (body lang 55%, voice 30%, standup, touch)
+
+---
+class: center, middle
+# Stand up!
+
+---
+class: center, middle
+# Touch.
+???
+- high fives as well, pat on the shoulder.
+- touch releases oxytocin (oksitoucin) in the recipient’s brain - safer, relax, connection, brings us closer.
+- waitresses get higher tips, petition gatherers get more signatures.
 
 ---
 class: center, middle
 ![:ribbon Challenge, small]
-# Why should I trust?
+# What enables trust?
+???
+- help me solve my actual problems (low hanging fruits)
+- work together long, see and respect the current way
+- likeability
+- hangout together
+- shared interests and SHOWING interest (Mindaugas)
+- shared background
+- deliver to my promises
+- own failure
+- same level, same tribe. You don't fully understand the consequences.; I don't think you hear what I am saying."
 
 ---
 # Am I a good leader?
@@ -927,7 +1018,16 @@ class: white, shorter
 
 ### ![:levels Communication, fas, fas, fas, fas, fas]
 ???
-There are over 22 million developers worldwide and this figure is expected to rise to 26 million in 2022. My goal is to equip you with skills that will set you apart from competitors.
+- remember that being a pro means working on 5 areas. IT is more sociaology than tech, the more senior you become, the more you'll understand it. I am glad you were here and I hope you learned something.
+
+---
+## Want to learn more?
+### <i class="fas fa-graduation-cap"></i> sizovs.net
+### <i class="fas fa-graduation-cap"></i> mustread.tech
+### <i class="fas fa-graduation-cap"></i> softskills.audio
+### <i class="fas fa-graduation-cap"></i> devternity.com
+### <i class="fas fa-graduation-cap"></i> Telegram group
+### <i class="fas fa-graduation-cap"></i> email me for 1x1 advice
 
 ---
 class: center, middle
